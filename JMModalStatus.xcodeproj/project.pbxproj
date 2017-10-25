@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		1FC7056C1FA0F644005296EC /* JMModalStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FC7056A1FA0F644005296EC /* JMModalStatus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1FC705731FA0F6A7005296EC /* JMModalStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC705721FA0F6A7005296EC /* JMModalStatusView.swift */; };
+		1FC705751FA0F6C2005296EC /* JMModalStatusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FC705741FA0F6C2005296EC /* JMModalStatusView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1FC705671FA0F644005296EC /* JMModalStatus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JMModalStatus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FC7056A1FA0F644005296EC /* JMModalStatus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMModalStatus.h; sourceTree = "<group>"; };
 		1FC7056B1FA0F644005296EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FC705721FA0F6A7005296EC /* JMModalStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMModalStatusView.swift; sourceTree = "<group>"; };
+		1FC705741FA0F6C2005296EC /* JMModalStatusView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JMModalStatusView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +52,8 @@
 			children = (
 				1FC7056A1FA0F644005296EC /* JMModalStatus.h */,
 				1FC7056B1FA0F644005296EC /* Info.plist */,
+				1FC705721FA0F6A7005296EC /* JMModalStatusView.swift */,
+				1FC705741FA0F6C2005296EC /* JMModalStatusView.xib */,
 			);
 			path = JMModalStatus;
 			sourceTree = "<group>";
@@ -95,6 +101,7 @@
 				TargetAttributes = {
 					1FC705661FA0F644005296EC = {
 						CreatedOnToolsVersion = 9.0.1;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -121,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FC705751FA0F6C2005296EC /* JMModalStatusView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FC705731FA0F6A7005296EC /* JMModalStatusView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +262,7 @@
 		1FC705701FA0F644005296EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -266,6 +276,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.joltguy.JMModalStatus;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -274,6 +285,7 @@
 		1FC705711FA0F644005296EC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
